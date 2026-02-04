@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    /* overflow-x: hidden; */
+    background-color: black;
+    color: white;
+}
+/* header {
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    position: sticky;
+    z-index: 100;
+} */
+nav {
+    background-color: rgb(165, 228, 124);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+nav .navbar {
+    display: flex;
+    list-style: none;
+    position: relative;
+    
+}
+nav .navbar li a {
+    padding: 10px 25px;
+    font-size: 1.6rem;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+nav .logo > a > img{
+    height: 45px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+nav .navbar li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+nav .navbar li {
+    list-style: none;
+    padding: 20px;
+}
+nav .navbar li:hover {
+    background-color: rgb(186, 250, 144);
+}
+/* KEPALA */
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem 9%;
+}
+h1 {
+    color: #59afe0;
+}
+#kepala {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: #f8f8f8;
+    animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.kepala-content h1 {
+    font-family: "Oswald", sans-serif;
+    color: rgb(151, 218, 88);
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+span {
+    font-family: "Oswald", sans-serif;
+    font-size: 8rem;
+    color: rgb(176, 231, 124);
+}
+
+/* ISIII... */
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem 9%;
+}
+/* Modal untuk Pembesaran Gambar */
+.modal { 
+    display: none; /* Tersembunyi secara default */
+    position: fixed; /* Tetap di tempat */
+    z-index: 1000; /* Berada di atas elemen lain */
+    left: 0;
+    top: 0;
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    overflow: auto; /* Aktifkan scroll jika diperlukan */
+    background-color: rgba(0,0,0,0.9); /* Hitam dengan opasitas */
+    justify-content: center; /* Pusat secara horizontal */
+    align-items: center; /* Pusat secara vertikal */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    object-fit: contain; /* Memastikan seluruh gambar terlihat dalam modal */
+    transform: scale(1); /* Skala awal */
+    transition: transform 0.3s ease-in-out; /* Transisi halus untuk zoom */
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+button.hamburger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+button.hamburger-menu > i {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
